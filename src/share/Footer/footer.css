@@ -1,0 +1,35 @@
+@media only screen and (max-width: 767px) {
+  .footer {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+.footer-title {
+  font-size: 18px;
+  color: whitesmoke;
+}
+
+.footer-container {
+  background-image: linear-gradient(to left bottom, #27e7ce, #9226da, #690564);
+}
+
+.link {
+  color: rgb(216, 203, 185);
+  font-size: 15px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.social {
+  color: whitesmoke;
+  font-size: 23px;
+}
+
+.copyright {
+  font-size: 14px;
+}

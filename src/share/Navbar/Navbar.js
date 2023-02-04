@@ -22,6 +22,8 @@ import { Link, Navigate, useNavigate } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
 import { Container } from '@mui/system';
 import './navbar.css'
+import logo from '../../assets/logo.jpg'
+
 
 
 
@@ -44,12 +46,12 @@ export default function Navbar(props) {
 
     const navItems = [
         <Link to='/'>Home</Link>,
-        <Link to='/addtask'>Courses</Link>,
+        <Link><a href="#courses">Courses</a></Link>,
         <Link to='/mytask'>Domain Hosting</Link>,
         <Link to='/completedtask'>Services</Link>,
         <Link to='/completedtask'>Faq</Link>,
         <Link to='/completedtask'>Certifiate verify</Link>,
-        <Link><Button sx={{ fontFamily: '"Segoe UI Symbol"' }} variant="contained">Log out</Button></Link>,
+        <Link><button className='login'>Login</button></Link>,
 
         // <>
         //     {
@@ -70,7 +72,7 @@ export default function Navbar(props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', }}>
-            <Typography variant="h6" sx={{ my: 2, fontSize: '1rem', fontWeight: 600 }}>
+            <Typography variant="h6" sx={{ my: 2, fontSize: '22px', fontWeight: 600 }} className='text'>
                 IT S O M A D H A N
             </Typography>
             <Divider />
@@ -105,13 +107,17 @@ export default function Navbar(props) {
 
                             <ListSharpIcon></ListSharpIcon>
                         </IconButton>
+                        <img src={logo} alt="" className='logo' />
                         <Typography
                             variant="h6"
                             component="div"
-                            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, color: '#e3f2fd' }}
+                            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' }, fontWeight: 600, fontSize: '2rem' }}
+                            className='text'
                         >
-                            IT S O M A D H A N
+                            IT &nbsp; S O M A D H A N
+
                         </Typography>
+
                         <Box sx={{ display: { xs: 'none', md: 'block' } }}>
                             {navItems.map((item, i) => (
                                 <Button key={i + 1} sx={{ color: '#e3f2fd', fontFamily: '"Segoe UI Symbol"', fontSize: 13 }} variant='text' >

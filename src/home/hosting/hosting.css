@@ -1,0 +1,33 @@
+.hosting-title {
+    color: whitesmoke;
+}
+
+.blue {
+    color: rgb(36, 228, 36);
+}
+
+.hosting-img {
+    width: 80px;
+    border-radius: 50%;
+    height: 75px;
+  
+    /* width: 100%; */
+    
+}
+.hosting-img:hover{
+    
+}
+
+.hosting-details h3 {
+    color: whitesmoke;
+}
+
+.hosting-details p {
+    color: rgba(173, 177, 236, 0.747);
+}
+.single-hosting{
+    transition: 0.5s all ease-in;
+}
+.single-hosting:hover{
+    transform: scale(1.2);
+}

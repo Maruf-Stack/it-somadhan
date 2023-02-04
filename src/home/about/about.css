@@ -1,0 +1,15 @@
+.about-img {
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+}
+
+.about-txt {
+  color: whitesmoke;
+}
+
+.about-us {
+  color: rgb(36, 228, 36);
+  font-size: 28px;
+  font-weight: 500;
+}

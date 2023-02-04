@@ -1,5 +1,61 @@
 .navbar {
     background-image: linear-gradient(to right, #070429, #080736, #2c198f, #2b0781, #360675);
-    width: 100vw;
 
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.text {
+    background-image: linear-gradient(to right, #8d5ccc, #525ecaf8, #da60df, #41a5cc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-position: -100%;
+    background-size: 400%;
+
+    animation: animateText 5s infinite alternate-reverse;
+
+}
+
+@keyframes animateText {
+    from {
+        background-position: 0;
+    }
+
+    to {
+        background-position: 100%;
+    }
+}
+
+.login {
+    border: none;
+    background-image: linear-gradient(to right, #5b52c2, #c34dd3);
+    color: whitesmoke;
+    font-family: "Segoe UI Symbol";
+    padding: 8px 26px;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: color 1s;
+
+}
+
+.login:hover {
+    border: none;
+    background-image: linear-gradient(to right, #c34dd3, #5b52c2);
+    color: rgb(36, 228, 36);
+    font-family: "Segoe UI Symbol";
+    padding: 8px 26px;
+    border-radius: 8px;
+
+}
+
+.logo {
+    width: 27px;
+    margin-right: 12px;
+    border-radius: 50%;
 }
