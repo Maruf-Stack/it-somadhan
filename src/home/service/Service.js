@@ -13,7 +13,7 @@ export default function ActionAreaCard() {
     
    <div>
    <h3 className="mb-10 text-2xl text-center service">Our Services</h3>
-     <div className='grid lg:grid-cols-5 justify-items-center grid-cols-2 gap-5 lg:gap-5'>
+     <div className='grid lg:grid-cols-5 justify-items-center grid-cols-3 gap-5 lg:gap-5'>
      <Card sx={{ maxWidth: 240,backgroundColor:'black' }} className='service-card'>
       <CardActionArea>
         <div className='geeks'>
