@@ -1,7 +1,24 @@
 .App {
   text-align: center;
 }
+::-webkit-scrollbar {
+  width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(183, 221, 243);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #1d033f;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #2b045f;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
